@@ -1,0 +1,305 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  background: linear-gradient(to top, #BD2F29, #ffffff);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #222;
+  text-align: center;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.red3 {
+  color: #BD2F29;
+}
+
+.desc {
+  font-weight: 400;
+  color: #555;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.section-desc {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Font grid */
+.font-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.font-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(245, 245, 245, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+  width: 100%;
+  max-width: 280px;
+  min-width: 240px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  margin: 0 auto;
+}
+
+.font-card:hover {
+  transform: translateY(-3px);
+}
+
+.font-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.creator {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.preservia-logo {
+  width: 120px;
+  opacity: 0.8;
+}
+
+/* Modal Styles */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for mobile */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: backdrop-filter 0.35s ease-in-out, 
+              -webkit-backdrop-filter 0.35s ease-in-out, 
+              background-color 0.35s ease-in-out, 
+              opacity 0.35s ease-in-out;
+}
+
+.backdrop.show {
+  pointer-events: all;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 1;
+}
+
+.details {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  padding: 32px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transform: scale(0.92);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details.show { 
+  animation: popIn 0.35s ease-in-out forwards; 
+}
+
+.details.hide { 
+  animation: popOut 0.35s ease-in-out forwards; 
+}
+
+@keyframes popIn { 
+  from { 
+    transform: scale(0.92); 
+    opacity: 0; 
+  } 
+  to { 
+    transform: scale(1); 
+    opacity: 1; 
+  } 
+}
+
+@keyframes popOut { 
+  from { 
+    transform: scale(1); 
+    opacity: 1; 
+  } 
+  to { 
+    transform: scale(0.92); 
+    opacity: 0; 
+  } 
+}
+
+.close-btn {
+  position: absolute;
+  top: 22px;
+  left: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #d9d9d9 !important;
+  color: #111 !important;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.close-btn:hover { 
+  background: #cfcfcf; 
+}
+
+#detailsBox img,
+.details img { 
+  width: 200px !important; 
+  height: 240px !important; 
+  border-radius: 20px; 
+  object-fit: contain !important; 
+  object-position: center;
+  margin: 20px auto !important; 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: block !important;
+  background: #f8f8f8;
+  max-width: none !important;
+  text-align: center;
+}
+
+.details h2 {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+
+.meta {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  opacity: 0.75;
+  margin-top: 4px;
+}
+
+.buttons { 
+  margin: 20px 0 10px; 
+  display: flex; 
+  justify-content: center; 
+  gap: 12px; 
+}
+
+.btn {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 26px;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.15s ease;
+}
+
+.btn:active { 
+  transform: translateY(1px); 
+}
+
+.btn.download { 
+  background: #BD2F29; 
+  color: #fff; 
+}
+
+.btn.download:hover {
+  background: #a02620;
+}
+
+.desc {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 1.4;
+  color: #222;
+  max-width: 540px;
+  padding-top: 10px;
+  margin: 10px auto 0;
+}
+
+/* Make font cards clickable */
+.font-card {
+  cursor: pointer;
+}

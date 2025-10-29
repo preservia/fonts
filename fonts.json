@@ -1,0 +1,66 @@
+[
+  {
+    "name": "contb",
+    "displayName": "Continuum Bold",
+    "creator": "Preservia",
+    "type": "original",
+    "file": "Font - Wii Logo (Continuum Bold).cia",
+    "tags": ["ui", "official"]
+  },
+  {
+    "name": "dtm",
+    "displayName": "DETERMINATION Mono",
+    "creator": "Preservia",
+    "type": "original",
+    "file": "Font - DETERMINATION.cia",
+    "tags": ["monospace", "game"]
+  },
+  {
+    "name": "ns-ui",
+    "displayName": "Nintendo Switch UI",
+    "creator": "Preservia",
+    "type": "original",
+    "file": "Font - Nintendo Switch UI.cia",
+    "tags": ["ui", "port"]
+  },
+  {
+    "name": "smm",
+    "displayName": "SUPER MARIO MAKER",
+    "creator": "Preservia",
+    "type": "original",
+    "file": "Font - SUPER MARIO MAKER.cia",
+    "tags": ["game", "square"]
+  },
+  {
+    "name": "spla2n",
+    "displayName": "Splatoon 2",
+    "creator": "Preservia",
+    "type": "original",
+    "file": "Font - Splatoon 2.cia",
+    "tags": ["game", "official"]
+  },
+  {
+    "name": "splat",
+    "displayName": "Splatoon",
+    "creator": "Preservia",
+    "type": "original",
+    "file": "Font - Splatoon 1.cia",
+    "tags": ["game", "square"]
+  },
+  {
+    "name": "zelda",
+    "displayName": "Zelda Glyphs",
+    "creator": "Preservia",
+    "type": "original",
+    "file": "Font - ZeldaGlyphs.cia",
+    "tags": ["game", "official"]
+  },
+  {
+    "name": "mine",
+    "displayName": "Mojangles",
+    "creator": "AspectX",
+    "type": "community",
+    "file": "Font - Mojangles (by AspectX).cia",
+    "tags": ["game", "official"]
+  }
+]

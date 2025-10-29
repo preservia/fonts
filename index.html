@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The 3DS Font Library</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1 class="title">The <span class="red3">3</span>DS Font Library</h1>
+      <p class="lead">The Nintendo 3DS Font Library is an ever-growing collection of pre-compiled fonts for your Nintendo 3DS.</p>
+    </header>
+
+
+    <main>
+      <section id="original-fonts" class="font-section">
+        <div class="section-header">
+          <h2>Original</h2>
+          <p class="section-sub">Fonts ported by the Preservia team</p>
+        </div>
+        <div class="font-grid" id="original-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="community-fonts" class="font-section">
+        <div class="section-header">
+          <h2>Community</h2>
+          <p class="section-sub">Fonts ported by the homebrew community</p>
+        </div>
+        <div class="font-grid" id="community-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/logo.png" alt="Preservia logo" class="preservia-logo">
+    </footer>
+  </div>
+
+  <!-- Font Details Modal -->
+  <div class="backdrop" id="backdrop">
+    <div class="details" id="detailsBox">
+      <button class="close-btn" id="closeBtn">✕</button>
+      <h2 id="detailTitle">Font Name</h2>
+      <div class="meta"><span id="detailCreator"></span> • <span id="detailType"></span></div>
+      <img id="detailIcon" alt="">
+      <div class="buttons">
+        <button class="btn download" id="downloadBtn">Download</button>
+      </div>
+      <div class="desc" id="detailDesc"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
