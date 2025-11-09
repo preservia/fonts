@@ -6,6 +6,7 @@
   <title>The 3DS Font Library</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -43,14 +44,16 @@
   <!-- Font Details Modal -->
   <div class="backdrop" id="backdrop">
     <div class="details" id="detailsBox">
-      <button class="close-btn" id="closeBtn">✕</button>
       <h2 id="detailTitle">Font Name</h2>
       <div class="meta"><span id="detailCreator"></span> • <span id="detailType"></span></div>
-      <img id="detailIcon" alt="">
+
+      <div class="screenshot-wrap" id="screenshotWrap">
+        <img id="detailIcon" alt="">
+      </div>
+
       <div class="buttons">
         <button class="btn download" id="downloadBtn">Download</button>
       </div>
-      <div class="desc" id="detailDesc"></div>
     </div>
   </div>
 
