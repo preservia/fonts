@@ -16,6 +16,16 @@ body {
 /* Header */
 header {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header {
+  width: 100%;
+  max-width: calc(4 * 280px + 3 * 24px); /* Match grid width */
+  margin: 0 auto;
+  text-align: left;
 }
 
 h1 {
