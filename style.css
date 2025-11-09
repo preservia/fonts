@@ -41,7 +41,15 @@ section {
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.section-header {
+  width: 100%;
+  max-width: calc(4 * 280px + 3 * 24px); /* Match max grid width */
+  text-align: left;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 section h2 {
@@ -61,11 +69,12 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
   gap: 24px;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
   width: 100%;
+  max-width: calc(4 * 280px + 3 * 24px); /* Match section-header width */
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .font-card {
